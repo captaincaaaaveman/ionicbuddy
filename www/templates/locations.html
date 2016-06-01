@@ -1,0 +1,13 @@
+<ion-view view-title="Where are you?">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="location in locations"
+                href="#/app/buddys">{{location.town}}
+				    <span class="item-note">
+      {{location.lon}} miles
+    </span>
+
+				</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

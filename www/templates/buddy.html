@@ -1,0 +1,26 @@
+<ion-view view-title="{{buddy.name}}">
+  <ion-content>
+    <div class="list card">
+      <div class="item item-avatar">
+        <img src="img/{{buddy.name}}.jpg">
+        <h3>{{buddy.language}}</h3>
+        <h2>{{buddy.name}}
+          </h2>
+        <h2>
+          <span data-ng-repeat="wantsto in buddy.upfor" 
+          class="ion-{{wantsto}}">
+          </span>
+        </h2>
+      </div>
+      <div class="item item-body">
+        <p>{{buddy.bio}}</p>
+      </div>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item">
+          <i class="icon ion-chatbox"></i>
+          Chat
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

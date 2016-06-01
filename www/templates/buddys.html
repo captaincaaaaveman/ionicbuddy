@@ -1,0 +1,12 @@
+<ion-view view-title="Who's game?">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="buddy in buddys"
+                href="#/app/buddys/{{buddy.id}}">{{buddy.name}}
+				    <span class="item-note">
+      {{buddy.language}}
+    </span>
+				</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
